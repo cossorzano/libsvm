@@ -1,3 +1,7 @@
+/* This file has been taken from LibSVM 3.25 */
+/* Authors: Chih-Chung Chang and Chih-Jen Lin, LIBSVM :*/
+/* Software available at http://www.csie.ntu.edu.tw/~cjlin/libsvm */
+
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,6 +12,8 @@
 #include <limits.h>
 #include <locale.h>
 #include "svm.h"
+using namespace libsvm;
+
 int libsvm_version = LIBSVM_VERSION;
 typedef float Qfloat;
 typedef signed char schar;

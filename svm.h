@@ -1,3 +1,7 @@
+/* This file has been taken from LibSVM 3.25 */
+/* Authors: Chih-Chung Chang and Chih-Jen Lin, LIBSVM : */
+/* Software available at http://www.csie.ntu.edu.tw/~cjlin/libsvm */
+
 #ifndef _LIBSVM_H
 #define _LIBSVM_H
 
@@ -22,8 +26,10 @@ struct svm_problem
 	struct svm_node **x;
 };
 
-enum { C_SVC, NU_SVC, ONE_CLASS, EPSILON_SVR, NU_SVR };	/* svm_type */
-enum { LINEAR, POLY, RBF, SIGMOID, PRECOMPUTED }; /* kernel_type */
+namespace libsvm {
+	enum { C_SVC, NU_SVC, ONE_CLASS, EPSILON_SVR, NU_SVR };	/* svm_type */
+	enum { LINEAR, POLY, RBF, SIGMOID, PRECOMPUTED }; /* kernel_type */
+}
 
 struct svm_parameter
 {
